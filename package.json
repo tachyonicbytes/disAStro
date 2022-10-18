@@ -1,0 +1,11 @@
+{
+  "name": "disastro",
+  "version": "0.0.1",
+  "description": "AssemblyScript Distribution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TachyonicBytes",
+  "license": "Apache-2.0"
+}
