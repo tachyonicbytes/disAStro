@@ -3,9 +3,29 @@
   "version": "0.0.1",
   "description": "AssemblyScript Distribution",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve ."
   },
   "author": "TachyonicBytes",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "as-big": "^0.2.0",
+    "assemblyscript": "^0.20.19",
+    "json-as": "^0.5.3",
+    "visitor-as": "^0.10.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.20.19"
+  }
 }
