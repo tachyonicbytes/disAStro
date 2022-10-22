@@ -1,8 +1,8 @@
 # Introduction
-`disastro`{.verbatim} is an AssemblyScript distribution, similar to
+`disastro` is an AssemblyScript distribution, similar to
 Anaconda for Python, and Spring for Java.
 
-`disastro`{.verbatim} wants to be a growing collection of AssemblyScript
+`disastro` wants to be a growing collection of AssemblyScript
 packages, organized in an easy-to-develop manner.
 
 This work is extremely experimental. You know what to do.

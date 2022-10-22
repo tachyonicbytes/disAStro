@@ -15,7 +15,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "as-big": "^0.2.0",
-    "assemblyscript": "^0.20.19",
+    "assemblyscript": "^0.21.7",
+    "assemblyscript-regex": "^1.6.4",
     "json-as": "^0.5.3",
     "visitor-as": "^0.10.2"
   },
@@ -24,8 +25,5 @@
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
     }
-  },
-  "devDependencies": {
-    "assemblyscript": "^0.20.19"
   }
 }

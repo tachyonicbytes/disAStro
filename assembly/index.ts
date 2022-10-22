@@ -2,6 +2,7 @@
 
 import Big from "as-big";
 import { JSON } from "json-as";
+import { RegExp } from "regexp";
 
 export function test1(): string {
   let r = Big.of(0.1) + Big.of(0.2);  // Big(0.3)
@@ -46,4 +47,4 @@ export function test2(): string {
 
 // const parsed = JSON.parse<Player>(stringified);
 // return stringified;
-export { Big, JSON };
+export { Big, JSON, RegExp };
