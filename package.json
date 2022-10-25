@@ -1,6 +1,6 @@
 {
   "name": "disastro",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AssemblyScript Distribution",
   "main": "index.js",
   "type": "module",
@@ -15,8 +15,11 @@
   "license": "Apache-2.0",
   "dependencies": {
     "as-big": "^0.2.0",
+    "as-string-sink": "^0.5.2",
+    "as-uuid": "^0.0.4",
     "assemblyscript": "^0.21.7",
     "assemblyscript-regex": "^1.6.4",
+    "byte-parse-as": "^0.0.1",
     "json-as": "^0.5.3",
     "visitor-as": "^0.10.2"
   },
@@ -25,5 +28,8 @@
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
     }
+  },
+  "devDependencies": {
+    "@as-pect/cli": "^7.0.8"
   }
 }

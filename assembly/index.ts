@@ -3,6 +3,9 @@
 import Big from "as-big";
 import { JSON } from "json-as";
 import { RegExp } from "regexp";
+import { StringSink } from "as-string-sink/assembly";
+import { ByteSink } from "byte-parse-as/assembly";
+
 
 export function test1(): string {
   let r = Big.of(0.1) + Big.of(0.2);  // Big(0.3)
@@ -45,6 +48,20 @@ export function test2(): string {
   return JSON.stringify<Player>(data);
 }
 
+function test3(arr: string[]): string {
+  let res = new StringSink();
+  for (let i = 0, len = arr.length; i < len; i++) {
+    res.write(arr[i] + "\n");
+  }
+  return res.toString();
+}
+
+function test4(): string {
+  let buffer = new ByteSink();
+  buffer.write(`Some content that should end up as bytes`);
+  return buffer.toString();
+}
+
 // const parsed = JSON.parse<Player>(stringified);
 // return stringified;
-export { Big, JSON, RegExp };
+export { Big, JSON, RegExp, StringSink, ByteSink };
