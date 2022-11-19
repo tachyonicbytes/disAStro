@@ -1,6 +1,6 @@
 {
   "name": "disastro",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "AssemblyScript Distribution",
   "main": "index.js",
   "type": "module",
@@ -31,5 +31,9 @@
   },
   "devDependencies": {
     "@as-pect/cli": "^7.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tachyonicbytes/disAStro.git"
   }
 }

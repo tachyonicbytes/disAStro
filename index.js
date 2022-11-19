@@ -1,4 +1,4 @@
-console.log("We are in our module");
+// disAStro entry point
 
 const fs = require("fs");
 const loader = require("@assemblyscript/loader");
