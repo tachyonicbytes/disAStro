@@ -1,6 +1,6 @@
 {
   "name": "disastro",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "AssemblyScript Distribution",
   "main": "index.js",
   "type": "module",
