@@ -1,27 +1,27 @@
 {
   "name": "disastro",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "AssemblyScript Distribution",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node tests",
-    "asbuild:debug": "asc assembly/index.ts --target debug",
-    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild:debug": "asc assembly/index.ts --target debug --bindings esm",
+    "asbuild:release": "asc assembly/index.ts --target release --bindings esm",
     "asbuild": "npm run asbuild:debug && npm run asbuild:release",
     "start": "npx serve ."
   },
   "author": "TachyonicBytes",
   "license": "Apache-2.0",
   "dependencies": {
-    "as-big": "^0.2.0",
+    "as-big": "^0.2.2",
     "as-string-sink": "^0.5.2",
     "as-uuid": "^0.0.4",
-    "assemblyscript": "^0.21.7",
+    "assemblyscript": "^0.25.0",
     "assemblyscript-regex": "^1.6.4",
-    "byte-parse-as": "^0.0.1",
+    "byte-parse-as": "^0.1.0",
     "json-as": "^0.5.3",
-    "visitor-as": "^0.10.2"
+    "visitor-as": "^0.11.4"
   },
   "exports": {
     ".": {
@@ -30,7 +30,7 @@
     }
   },
   "devDependencies": {
-    "@as-pect/cli": "^7.0.8"
+    "@as-pect/cli": "^8.1.0"
   },
   "repository": {
     "type": "git",

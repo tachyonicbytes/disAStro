@@ -3,17 +3,22 @@
 
 `disastro` wants to be a growing collection of AssemblyScript packages, organized in an easy-to-develop manner.
 
-This work is extremely experimental. You know what to do.
+This work is extremely experimental. You know what to expect.
 
-## Stewardship
-Am I a good steward for the project? You can check the project name for that.
-
-# Usage
-For now, I only integrated the `as-big` and `json-as` packages. The entire usage stands now at:
-
+# Installation
 ``` bash
 npm install disastro
 ```
+
+# Building from sources
+You have to build with `--legacy-peer-deps` for now, because `as-pect` and `as-visitor` have different `assemblyscript` required versions.
+
+```bash
+npm install --legacy-peer-deps
+```
+
+# Usage
+For now, I only integrated the `as-big` and `json-as` packages. The entire usage stands now at:
 
 ``` typescript
 import { Big, JSON } from "disastro/assembly/index.ts";
