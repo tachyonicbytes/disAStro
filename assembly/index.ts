@@ -63,6 +63,24 @@ export function test4(): string {
   return buffer.toString();
 }
 
+export function test5(): Player {
+  // @ts-ignore
+  const data: Player = {
+    firstName: "Emmet",
+    lastName: "West",
+    lastActive: [8, 27, 2022],
+    age: 23,
+    pos: {
+      x: -3.4,
+      y: 1.2
+    },
+    isVerified: true
+  }
+
+  let json = JSON.stringify<Player>(data);
+  return JSON.parse<Player>("[1, 2, 3]");
+}
+
 // const parsed = JSON.parse<Player>(stringified);
 // return stringified;
 export { Big, JSON, RegExp, StringSink, ByteSink, uuid };
